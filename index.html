@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Fake Detection</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Enables PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+    <py-config>
+      packages = ["numpy"]
+    </py-config>
+
+    <header>
+      <h1>Deep Fake Detection</h1>
+    </header>
+    
+    <main>
+      <form>
+        <label for="image-source">Select an image source:</label>
+        <div>
+          <input type="radio" id="upload" name="image-source" value="upload" checked>
+          <label for="upload">Upload a file</label>
+        </div>
+        <div>
+          <input type="radio" id="url" name="image-source" value="url">
+          <label for="url">Provide URL link</label>
+        </div>
+        
+        <div id="upload-section">
+          <label for="image-upload">Upload an image or video file:</label>
+          <input type="file" id="image-upload" accept=".jpg, .jpeg, .png, .mp4, .mov">
+        </div>
+        
+        <div id="url-section" style="display:none">
+          <label for="image-url">Enter the URL of an image or video file:</label>
+          <input type="text" id="image-url">
+        </div>
+        
+        <button type="submit" id="detect-button">Detect Deep Fake</button>
+      </form>
+
+      <div id="output-box"></div>
+      <button type="button" id="report-button">Report</button>
+    
+      <!-- Python files -->
+      <py-script>
+        import numpy as np
+
+        def getSum(x,y):
+          return x+y
+
+        sum = getSum(5,5)
+        pyscript.write('output-box',sum)
+
+        arr = np.array([1,2,3,4,5])
+        pyscript.write('output-box',arr)
+      </py-script>
+
+      <!-- JavaScript file -->
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
