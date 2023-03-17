@@ -23,6 +23,4 @@ As for testing, we have generated fake images using OpenAI's Dall-E. Below are s
 **Result:**
 
 ### Webpage Application
-Then, we created a web application for a user friendly interface of our solution. Here is the link: [deepfakedetection.info](deepfakedetection.info). 
-
-So basically, a user can simply upload an image or insert a link to our website and it will tell the user whether it is fake or real. 
+Then, we created a web application for a user friendly interface of our solution. Here is the link: [deepfakedetection.info](deepfakedetection.info). A user can simply upload an image or insert a link to our website and it will tell the user whether it is fake or real. 
