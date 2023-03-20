@@ -4,8 +4,10 @@
 This outlines our team's solution for the ["Social Media Lab's 2023 Canadian #AI Misinformation Hackathon"](https://socialmedialab.ca/events/hackathon/) event happened in February-March 2023.
 
 
-## Objective
-With the booming of algorithms that generates fake data, fraudulent or deceptive purposes have becoming a serious concern to our society. Hence, this project aims to detect deep fake images/videos with the aid of OpenAI API.
+## Objective/Solution
+The challenge we plan to address is the detection of deep fake images/videos with the aid of OpenAI API. The problem with deep fakes is with the constant evolving capabilities of algorithms that generates fake data making imitation seem flawless. When deep fakes are used for fraudulent or deceptive purposes, it poses a grave threat and becomes a serious concern to our society. Hence, this project aims to detect deep fake images/videos with machine learning models and with the aid of OpenAI API.
+
+The proposed solution can assist in fighting against the spread of misinformation online by allowing users to submit concerning images/videos via URL link or personal files at any given time through a website. Evaluation in this instance is based on our machine learning models accuracy in predicting whether the images provided are 'Real' or 'Fake'. 
 
 ## Implementation
 Python with the help of Tensorflow 2.10 with Keras API is used for the implementation of this project. As for the web application, Ubuntu server, and basic html with css styling are used. 
