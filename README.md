@@ -13,9 +13,9 @@ The proposed solution can assist in fighting against the spread of misinformatio
 Python with the help of Tensorflow 2.10 with Keras API is used for the implementation of this project. As for the web application, Ubuntu server, and basic html with css styling are used. 
 
 ### Classifier Model
-VGG16 network is well known for its high accuracy for classifying images and therefore, we have applied it for detecting fake images that could be developed further for videos. 
+We first used a modified version of VGG16 as the main structure of our AI algorithm for classifying real and fake images, and obtained about 73-76% accuracy. Since we want to focus on people's images, we looked into AlexNet. AlexNet is well known for its high accuracy (~90%) for classifying images and therefore, we have applied it for detecting fake images that could be developed further for videos. For our actual training of AlexNet, the accuracy is about 99% for 15 epochs. Therefore, we have decided to use AlexNet as our main model. 
 
-We first trained and validated our proposed model, modified VGG16, with about 12k real and fake images. Then for testing, we have generated fake images using OpenAI's Dall-E. Below are some examples of the original, the fake image (generated from Dall-E) and the prediction of our model.
+We first trained and validated our proposed model, with about 12k real and fake images. Then for testing, we have also generated fake images using OpenAI's Dall-E. Below are some examples of the original, the fake image (generated from Dall-E) and the prediction of our model.
 
  <img src="https://github.com/WileyT/AI_Misinformation_Hackathon_2023/blob/main/donald256.png" width="100" height="100">
  <img src="https://github.com/WileyT/AI_Misinformation_Hackathon_2023/blob/main/donaldrealfake.jpg" width="100" height="100">
