@@ -17,11 +17,14 @@ We first used a modified version of VGG16 as the main structure of our AI algori
 
 We first trained and validated our proposed model, with about 12k real and fake images. Then for testing, we have also generated fake images using OpenAI's Dall-E. Below are some examples of the original, the fake image (generated from Dall-E) and the prediction of our model.
 
- <img src="https://github.com/WileyT/AI_Misinformation_Hackathon_2023/blob/main/donald256.png" width="100" height="100">
- <img src="https://github.com/WileyT/AI_Misinformation_Hackathon_2023/blob/main/donaldrealfake.jpg" width="100" height="100">
-
-**Result:**
-"Fake Image"
+<p float="left">
+ <img src="https://github.com/WileyT/AI_Misinformation_Hackathon_2023/blob/main/donald256.png" width="150" height="150">
+ 
+ <img src="https://github.com/WileyT/AI_Misinformation_Hackathon_2023/blob/main/donaldrealfake.jpg" width="150" height="150">
+ </p>
+ 
+**Model Prediction:**
+"Image is Real" "Image is Fake"
   
 ### Webpage Application
 Then, we created a web application for a user friendly interface of our solution. Here is the link: [deepfakedetection.info](http://deepfakedetection.info/). A user can simply upload an image or insert a link to our website and it will tell the user whether it is fake or real. 
